@@ -14,6 +14,11 @@ a:hover {
     cursor: grab;
 }
 
+iframe {
+    width: 450px;
+    height: 250px;
+}
+
 .listaDeCategorias2 {
     justify-content: center;
     display: flex;
@@ -41,6 +46,18 @@ a:hover {
     border-radius: 35px;
     border-color: #00ff00; /* Neon green color */
     box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+}
+
+.subtitle2 {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
+.amarelo {
+    color: yellow;
 }
 
 /* Media Queries para dispositivos menores */
