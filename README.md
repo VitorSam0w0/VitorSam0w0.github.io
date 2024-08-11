@@ -1,2 +1,1 @@
-# VitorSam0w0.github.io
-Meus projetos!
+[Go to the main page](index.html)
