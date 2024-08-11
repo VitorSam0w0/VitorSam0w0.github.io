@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-size: 18pt;
+}
+
+a:hover {
+    cursor: grab;
+}
+
+.listaDeCategorias2 {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
+}
+
+.listaDeCategorias2 li {
+    margin-top: 100px;
+    padding: 40px;
+    list-style: none; /* Remove bullets */
+}
+
+.listaDeCategorias2 li img {
+    width: 300px;
+    height: 150px;
+    transform: scale(1.0);
+    transition: 1s;
+    border-radius: 40px;
+    border: 1px solid transparent;
+}
+
+.listaDeCategorias2 li img:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    border-radius: 35px;
+    border-color: #00ff00; /* Neon green color */
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+}
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 1024px) {
+    .listaDeCategorias2 li {
+        margin-top: 100px; /* Ajuste a margem superior conforme necessário */
+        padding: 20px; /* Reduz o padding para telas menores */
+    }
+
+    .listaDeCategorias2 li img {
+        width: 250px; /* Reduz a largura das imagens para telas menores */
+        height: 125px; /* Reduz a altura das imagens para telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .listaDeCategorias2 li {
+        margin-top: 50px; /* Ajuste a margem superior conforme necessário */
+        padding: 10px; /* Reduz o padding ainda mais para telas menores */
+    }
+
+    .listaDeCategorias2 li img {
+        width: 250px; /* Reduz a largura das imagens para telas menores */
+        height: 125px; /* Reduz a altura das imagens para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .listaDeCategorias2 {
+        flex-direction: column; /* Alinha os itens em uma única coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .listaDeCategorias2 li {
+        margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+        padding: 5px; /* Reduz o padding para o mínimo em telas muito pequenas */
+    }
+
+    .listaDeCategorias2 li img {
+        width: 250px; /* Reduz a largura das imagens para telas menores */
+        height: 125px; /* Reduz a altura das imagens para telas menores */
+    }
+
+    a {
+        font-size: 14pt; /* Reduz o tamanho da fonte dos links */
+    }
+
+    .textFinal {
+        margin-top: 100px; /* Reduz a margem superior do texto final */
+    }
+}
+
+
+#voltar {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    border-radius: 30px;
+    border-color: gray;
+    transition: 1s;
+}
+
+#voltar:hover {
+    transition: 1s;
+    scale: 1.06;
+}
